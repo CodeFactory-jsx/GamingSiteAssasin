@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gaming Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Gammers</a>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Tournaments</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="action">
+                <div class="searchBx">
+                    <a href="#"><i class='bx bx-search'></i></a>
+                    <input type="text" placeholder="Search Games">
+                </div>
+            </div>
+            <div class="toggleMenu"></div>
+        </header>
+
+        <!-- Home Banner -->
+        <div class="banner">
+            <div class="bg">
+                <div class="content">
+                    <h2>A New Home for <br>
+                        Game Lovers</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Veritatis doloribus voluptatibus.</p>
+                    <a href="#" class="btn">Join Now</a>
+                </div>
+                <img src="assassin.jpg" alt>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div class="about">
+            <div class="contentBx">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque omnis enim aliquid natus libero temporibus, cum
+                    illo commodi error in.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque omnis enim aliquid natus libero temporibus, cum
+                    illo commodi error in.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque omnis enim aliquid natus libero
+                    illo commodi error in.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque omnis enim aliquid natus libero illo commodi
+                    error in.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque omnis enim aliquid natus libero temporibus, cum
+                    illo commodi error in.
+                </p>
+                <a href="#">Read more</a>
+            </div>
+            <img src="videogame.png" alt>
+        </div>
+
+        <script>
+            /* Sticky NavBar */
+            window.addEventListener('scroll',function(){
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky',window.scrollY > 0);
+            });
+        </script>
+    </body>
+</html>
